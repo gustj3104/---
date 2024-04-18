@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>윤현서</title>
+    <h1>동아리 가입 양식</h1>
+  </head>
+  <body>
+    <form>
+      <label for="username">이름</label>
+      <input type="text" id="username" name="username" /><br />
+
+      <label for="major">학부/학과</label>
+      <input list="major" id="major" />
+      <datalist id="major">
+        <option value="Data Science"></option>
+        <option value="Statistic"></option>
+        <option value="Physics"></option></datalist
+      ><br />
+
+      <label for="grade1">학년</label>
+      <input type="radio" id="grade1" name="grade" value="1" />1학년
+      <label for="grade2"></label>
+      <input type="radio" id="grade2" name="grade" value="2" />2학년
+      <label for="grade3"></label>
+      <input type="radio" id="grade3" name="grade" value="3" />3학년
+      <label for="grade4"></label>
+      <input type="radio" id="grade4" name="grade" value="4" />4학년<br />
+
+      <label for="classnumber"> 학번</label>
+      <input type="text" id="classnumber" name="classnumber" /><br />
+
+      <label for="email">이메일</label>
+      <input type="email" id="email" /><br />
+
+      <label for="phone">전화번호</label>
+      <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" /><br />
+
+      <label for="textarea">가입동기</label>
+      <textarea name="registerRs" rows="2" cols="20" id="textarea"></textarea
+      ><br /><br />
+
+      <input type="submit" value="가입하기" />
+      <input type="reset" value="취소하기" />
+    </form>
+  </body>
+</html>

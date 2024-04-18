@@ -1,0 +1,62 @@
+* {
+  margin: 0 auto;
+  /* margin: top; right; bottom; left; 시계방향으로 작성하면 됨.
+    margin: 20px; 20px하면 위아래 세트 양옆 세트로 영역 지정
+    margin: 20px; 하면 네방향 모두 20 
+    marign은 바깥쪽 영역, padding은 안쪽 영역 
+    */
+}
+
+h1 {
+  text-shadow: 5px 2px 2px #6580b6;
+  text-decoration: underline;
+}
+
+#signup label {
+  float: left;
+  font-size: 15px;
+  width: 120px;
+}
+/* signup안에 있는 label들을 의미함 */
+
+#signup input {
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+legend {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+#signup input[type="submit"] {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+}
+
+#signup input[type="submit"]:hover {
+  /* 마우스가 올라갔을 때 작동 */
+  background-color: #1bdc22;
+}
+
+fieldset:last-of-type {
+  /* fieldset의 마지막 요소에만 적용 */
+  border: none;
+}
+
+#name,
+#email,
+#tel {
+  width: 200px;
+}
